@@ -13,11 +13,14 @@ const menu = {
     },
     get todaysSpecial(){
         if(this._meal && this._price){
-            return 'Todays meal is' ${this._meal} 'for' ${this._price}!
-        } else {
-            return 'Meal or price was not set correctly!'        }
-    }
-};
+            return `Todays meal is ${this._meal} for $${this._price}!`
+        } 
+        else {
+            return 'Meal or price was not set correctly!'      
+          }
+        }
+    };
+
 menu._meal = 'chicken';
 menu._price = 9;
 console.log(menu.todaysSpecial);
